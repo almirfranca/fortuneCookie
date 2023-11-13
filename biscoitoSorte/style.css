@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+/*
+    font-family: 'Dancing Script', cursive;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+.hide {
+    display: none;
+}
+
+body {
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    background: #FFFFFF;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 4.8rem 6.4rem 6.4rem;
+    width: min(42.8rem, 90%);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #34355B;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #34355B;
+    margin-bottom: 2.0rem;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#openCookie:hover {
+    animation-name: shake; /* Nome da animação */
+    animation-duration: 0.3s; /* Duração da animação */
+    animation-timing-function: ease-in-out; /* Função de temporização (facilita a entrada e saída) */
+    animation-iteration-count: infinite; /* Número de vezes que a animação será repetida (infinito para continuar indefinidamente) */
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+
+/*screen2*/
+
+.screen2 p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #000000;
+    padding: 1rem;
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+}
+
+.screen2 button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #FF9500;
+    padding: 1.6rem;
+    border-radius: .4rem;
+    margin-top: 5.9rem;
+}
+
+.screen2 button:hover {
+    background: #ffa323;
+    transform: scale(1.05);
+}
+
+.screen2 p {
+    animation: slideIn 1s ease-in-out;;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0.3;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
